@@ -1,0 +1,270 @@
+:root {
+  --banner-background-color: #4e4e4e;
+  --banner-height: 50px;
+}
+/* UNIVERSAL STYLES */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 1.2rem;
+  font-family: "Roboto", "sans-serif";
+  scroll-behavior: smooth;
+  transition: ease 1.2s;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.padding1 h1 {
+  text-align: left;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+/* NAVBAR & HEADER */
+
+.navbar-split {
+  background-color: var(--banner-background-color);
+  display: flex;
+  justify-content: space-around;
+  height: var(--banner-height);
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.nav-list a {
+  color: #fff;
+}
+
+.bold {
+  color: #fff;
+  font-weight: bold;
+}
+/* LANDING PAGE SECTION WITH STAFF PHOTOS */
+
+.bcg-image {
+  height: calc(100vh - var(--banner-height));
+  width: 100%;
+  background-image: url(../Images/tło.jpg);
+  background-size: cover;
+  background-color: #6b6b6b;
+}
+
+.bcg-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.landing-page {
+  display: flex;
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 50px 0px 50px;
+}
+
+.landing-page_h {
+  text-align: left;
+}
+
+.landing-page_p {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.header-white {
+  color: #fff;
+}
+/* Button */
+
+#btn-offer {
+  width: 9rem;
+  height: 2rem;
+  font-size: 13px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid;
+}
+
+#btn-offer:hover {
+  background-color: #fff;
+  color: #000000;
+  transition: ease 2s;
+  cursor: pointer;
+}
+
+#btn-offer:hover a {
+  color: black;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  padding-bottom: 40px;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.person:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.person:nth-of-type(odd) {
+  flex-direction: row;
+}
+
+.person_description {
+  padding: 40px;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: black;
+}
+
+.photo-w {
+  background-color: #c4c4c4;
+}
+
+.photo-m {
+  background-color: #907d7d;
+}
+
+.photo-w,
+.photo-m,
+.photo-m1,
+.photo-w1 {
+  max-height: 500px;
+  max-width: 500px;
+  min-height: 190px;
+  min-width: 190px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* IMAGES URL'S */
+
+.photo-w {
+  background-image: url(../Images/woman_1.jpg);
+}
+
+.photo-m {
+  background-image: url(../Images/man_1.jpg);
+}
+
+.photo-w1 {
+  background-image: url(../Images/woman_2.jpg);
+}
+.photo-m1 {
+  background-image: url(../Images/man_2.jpg);
+}
+/* OFFER SECTION */
+
+#offer {
+  background-color: #405d78;
+}
+
+.offer_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background-color: #ffffff;
+  width: 30%;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease;
+  margin: 10px;
+}
+
+.box::before {
+  content: "";
+  padding-top: 100%;
+  float: left;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  border: 1px #aaa;
+}
+
+.box_content {
+  margin-top: 30%;
+  margin-bottom: 30%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* USŁUGA1 */
+.new1 {
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+
+.new {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  top: -5%;
+  left: -5%;
+  background-color: #e07a64;
+}
+/* FOOTER */
+
+footer p {
+  color: #fff;
+}
+
+.social a {
+  color: #fff;
+  padding: 5px;
+}
